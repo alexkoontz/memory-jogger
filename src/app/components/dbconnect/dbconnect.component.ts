@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DbconnectService} from 'src/app/dbconnect.service';
+import {DbconnectService} from 'src/app/services/dbconnect.service';
 
 @Component({
   selector: 'app-dbconnect',

@@ -4,12 +4,16 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DbconnectComponent } from './dbconnect/dbconnect.component';
+import { DbconnectComponent } from './components/dbconnect/dbconnect.component';
+import { LoginBoxComponent } from './components/login-box/login-box.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DbconnectComponent
+    DbconnectComponent,
+    LoginBoxComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
