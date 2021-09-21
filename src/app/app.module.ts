@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { DbconnectComponent } from './components/dbconnect/dbconnect.component';
 import { LoginBoxComponent } from './components/login-box/login-box.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoginButtonComponent } from './components/login-button/login-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DbconnectComponent,
     LoginBoxComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginButtonComponent
   ],
   imports: [
     BrowserModule,

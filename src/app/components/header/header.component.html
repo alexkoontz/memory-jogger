@@ -1,8 +1,24 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div>
-            <i class="bi bi-chevron-compact-up" style="color:#395a49; font-size: 2rem;"></i>
-        </div>
-        <a class="navbar-brand" href="#">{{ title }}</a>
-    </nav>
-</header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#63bc5f;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+  
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">{{ title }}</a>
+  
+      <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+        </ul>
+  
+        <!-- Icons -->
+        <ul class="navbar-nav d-flex flex-row me-1">
+          <li class="nav-item me-3 me-lg-0">
+            <app-login-button></app-login-button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Container wrapper -->
+</nav>
