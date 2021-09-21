@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 .navbar-brand {
     padding-left: 0.5rem;
+}
 
+.form-group {
+    padding-bottom: 0.5rem;
+}
+
+.login-box {
+    background-color: gray;
+    width: 300px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0; 
 }
 
