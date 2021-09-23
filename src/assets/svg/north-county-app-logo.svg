@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6b997d;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="500" height="500" rx="37" ry="37"/>
+  <image id="chevron-compact-up" x="46" y="172" width="409" height="126" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAAAaCAYAAADL5WCkAAABuklEQVRoge3aP0sCYRzA8W8goqKg4JCD4iARLhE0tPYOegm1NTZGU2NDQ2NLf8Y2WwQdegdBezjZ4GLgIAhiGk/8guOpi7vn7vTR8wuHIN49z+8zCHq3gd2VgGNgC3gD7oGe5Xu2LoV4DYyAmeMYyfuluAN5yQ1RP9ao/1T2iOiGWrZ2sjlWAW6AsU9E/RjLdSqxkXMUFmKsUasRIbqhVi2YOfRqwAMw8YkyBC6BbXkd+jx/IuvW1ohQ1K5XjCNq2Ih6sUCtA4/A1OeQA+ACKPhcryDnDXyuN5V91iNyCFRQxHzA9fOrgLpoRL2lRN0FGgaIfeAMyEW8v5ys0zdAbch8kacWefK5QSdidh6bdJQ1RJ3JnJGgLhuinhWo+0DTYAPqP8dTIBMqSfAysq+ewUxN8TBCbAVATFuGqJcOgNryirrqiHqRoKrfvm2DC3aBEyC1UJLgpWSOroFBW/y+2zT4Yv5BTC4x4F8lDVE/xJHzNeKvTFCVI1cePtgBjmKAqJeUuTsejJQjhx4QE1aNOP8SHlCVI+re+d0a0VNuqLfK0fkQwh6wA7wDz8CnxUMtOoV6ILdFXoEXgC8OkzrlTMpIJgAAAABJRU5ErkJggg=="/>
+</svg>

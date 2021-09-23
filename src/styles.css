@@ -1,4 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --ui-gray: rgb(211, 211, 211);
+}
+
+nav {
+    background-color: var(--ui-gray);
+    box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+}
+
+.logo {
+    box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+}
+
 .navbar-brand {
     padding-left: 0.5rem;
 }
@@ -8,10 +25,12 @@
 }
 
 .login-box {
-    background-color: gray;
+    background-color: var(--ui-gray);
     width: 300px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0; 
+    padding: 2rem;
+    margin: 1rem; 
+    box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
 }
 
