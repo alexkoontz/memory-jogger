@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --ui-gray: rgb(211, 211, 211);
+    --ui-gray: rgb(226, 226, 226);
 }
 
 nav {
@@ -8,6 +8,14 @@ nav {
     box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+}
+
+h1 {
+    padding: 1rem;
+}
+
+h2 {
+    padding: 1rem;
 }
 
 .logo {
@@ -26,11 +34,33 @@ nav {
 
 .login-box {
     background-color: var(--ui-gray);
-    width: 300px;
+    width: 20rem;
     padding: 2rem;
     margin: 1rem; 
+    border-radius: 25px;
     box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
 }
 
+.room-table {
+    background-color: var(--ui-gray);
+    width: 60rem;
+    padding: 2rem;
+    margin: 1rem; 
+    border-radius: 25px;
+    box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+}
+
+.document-panel {
+    background-color: var(--ui-gray);
+    width: 20rem;
+    padding: 2rem;
+    margin: 1rem; 
+    border-radius: 25px;
+    box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
+}
