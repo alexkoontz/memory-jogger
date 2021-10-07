@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
 import { RoomTableComponent } from './components/room-table/room-table.component';
 import { DocumentPanelComponent } from './components/document-panel/document-panel.component';
+import { AddUserPanelComponent } from './components/add-user-panel/add-user-panel.component';
+import { DeleteUserPanelComponent } from './components/delete-user-panel/delete-user-panel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DocumentPanelComponent } from './components/document-panel/document-pan
     HeaderComponent,
     LoginButtonComponent,
     RoomTableComponent,
-    DocumentPanelComponent
+    DocumentPanelComponent,
+    AddUserPanelComponent,
+    DeleteUserPanelComponent
   ],
   imports: [
     BrowserModule,

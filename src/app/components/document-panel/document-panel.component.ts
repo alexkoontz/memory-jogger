@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./document-panel.component.css']
 })
 export class DocumentPanelComponent implements OnInit {
-
+  documentHeader: string = 'CSV Downloader';
   constructor() { }
 
   ngOnInit(): void {

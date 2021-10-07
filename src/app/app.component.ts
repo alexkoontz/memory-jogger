@@ -1,4 +1,5 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,5 @@ import { Component, NgModule } from '@angular/core';
 
 export class AppComponent {
   title = 'memory-jogger-angular-app';
+  
 }

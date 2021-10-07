@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-box.component.css']
 })
 export class LoginBoxComponent implements OnInit {
-
+  loginHeader: string = 'Login';
   constructor() { }
 
   ngOnInit(): void {
