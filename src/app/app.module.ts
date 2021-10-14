@@ -12,6 +12,8 @@ import { RoomTableComponent } from './components/room-table/room-table.component
 import { DocumentPanelComponent } from './components/document-panel/document-panel.component';
 import { AddUserPanelComponent } from './components/add-user-panel/add-user-panel.component';
 import { DeleteUserPanelComponent } from './components/delete-user-panel/delete-user-panel.component';
+import { HomeComponent } from './components/home/home.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DeleteUserPanelComponent } from './components/delete-user-panel/delete-
     RoomTableComponent,
     DocumentPanelComponent,
     AddUserPanelComponent,
-    DeleteUserPanelComponent
+    DeleteUserPanelComponent,
+    HomeComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
