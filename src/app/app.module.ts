@@ -4,7 +4,6 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DbconnectComponent } from './components/dbconnect/dbconnect.component';
 import { LoginBoxComponent } from './components/login-box/login-box.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
@@ -19,7 +18,6 @@ import { UserComponent } from './components/user/user.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DbconnectComponent,
     LoginBoxComponent,
     HeaderComponent,
     LoginButtonComponent,
