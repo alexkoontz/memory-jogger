@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-user-panel.component.css']
 })
 export class AddUserPanelComponent implements OnInit {
-  addUserHeader: string = 'Add User';
   constructor() { }
 
   ngOnInit(): void {

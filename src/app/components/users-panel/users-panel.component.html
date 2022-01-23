@@ -53,49 +53,49 @@
                 </div>
                 <div class="modal-body">
 
-                    <form id="addUserForm">
+                    <form [formGroup]="formValue" id="addUserForm">
                         <div class="mb-3">
                             <label for="newUsername">Username</label>
-                            <input type="text" class="form-control" id="newUsername">
+                            <input type="text" formControlName="Username" class="form-control" id="newUsername">
                         </div>
                         <div class="mb-3">
                             <label for="newPassword">Password</label>
-                            <input type="text" class="form-control" id="newPassword">
+                            <input type="text" formControlName="Password" class="form-control" id="newPassword">
                         </div>
                         <div class="mb-3">
                             <label for="newLastName">Last Name</label>
-                            <input type="text" class="form-control" id="newLastName">
+                            <input type="text" formControlName="LastName" class="form-control" id="newLastName">
                         </div>
                         <div class="mb-3">
                             <label for="newFirstName">First Name</label>
-                            <input type="text" class="form-control" id="newFirstName">
+                            <input type="text" formControlName="FirstName" class="form-control" id="newFirstName">
                         </div>
                         <div class="mb-3">
                             <label for="newAddress">Address</label>
-                            <input type="text" class="form-control" id="newAddress">
+                            <input type="text" formControlName="Address" class="form-control" id="newAddress">
                         </div>
                         <div class="mb-3">
                             <label for="newPolicyNumber">Policy Number</label>
-                            <input type="text" class="form-control" id="newPolicyNumber">
+                            <input type="text" formControlName="PolicyNumber" class="form-control" id="newPolicyNumber">
                         </div>
                         <div class="mb-3">
                             <label for="newClaimNumber">Claim Number</label>
-                            <input type="text" class="form-control" id="newClaimNumber">
+                            <input type="text" formControlName="ClaimNumber" class="form-control" id="newClaimNumber">
                         </div>
                         <div class="mb-3">
                             <label for="newDateOfLoss">Date of Loss</label>
-                            <input type="date" class="form-control" id="newDateOfLoss">
+                            <input type="date" formControlName="DateOfLoss" class="form-control" id="newDateOfLoss">
                         </div>
                         <div class="mb-3">
                             <label for="newAdminStatus">Administrator Status</label>
-                            <input type="text" class="form-control" id="newAdminStatus">
+                            <input type="text" formControlName="AdminStatus" class="form-control" id="newAdminStatus">
                         </div>
                     </form>
 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" (click)="postUserDetails()" class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>
