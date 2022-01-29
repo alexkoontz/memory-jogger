@@ -17,22 +17,22 @@ export class ApiService {
     }))
   }
 
-  getUser(data: any){
+  getUser(){
     return this.http.get<any>("http://localhost:3000/users")
     .pipe(map((res:any)=>{
       return res;
     }))
   }
 
-  updateUser(data: any,username: string){
-    return this.http.put<any>("http://localhost:3000/users"+username, data)
+  updateUser(data : any,id : number){
+    return this.http.put<any>("http://localhost:3000/users/"+id, data)
     .pipe(map((res:any)=>{
       return res;
     }))
   }
 
-  deleteUser(username: string){
-    return this.http.delete<any>("http://localhost:3000/users"+username)
+  deleteUser(id : number){
+    return this.http.delete<any>("http://localhost:3000/users/"+id)
     .pipe(map((res:any)=>{
       return res;
     }))

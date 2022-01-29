@@ -1,4 +1,5 @@
 export class UserModel {
+    id : number = 0;
     Username : string = '';
     Password : string = '';
     LastName : string = '';

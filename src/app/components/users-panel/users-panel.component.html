@@ -1,43 +1,48 @@
 <div class="container animate__animated animate__fadeIn">
 
     <div class="col-sm mx-3 my-3">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUsersModal">
+        <button (click)="revealUserAddButton()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUsersModal">
             Add user
         </button>
     </div>
-
-   <table class="table">
-       <thead>
-           <tr>
-               <th scope="col">Username</th>
-               <th scope="col">Password</th>
-               <th scope="col">Last Name</th>
-               <th scope="col">First Name</th>
-               <th scope="col">Address</th>
-               <th scope="col">Policy Number</th>
-               <th scope="col">Claim Number</th>
-               <th scope="col">Date of Loss</th>
-               <th scope="col">Administrator Status</th>
-           </tr>
-       </thead>
-       <tbody>
-           <tr>
-               <td>ack5429</td>
-               <td>p@ssword!</td>
-               <td>Koontz</td>
-               <td>Alexander</td>
-               <td>2910 Ridings Way</td>
-               <td>42124123</td>
-               <td>1324D</td>
-               <td>02/03/1999</td>
-               <td>Administrator</td>
-               <td>
-                   <button class="btn btn-primary">Edit</button>
-                   <button class="btn btn-danger mx-3">Delete</button>
-               </td>
-           </tr>
-       </tbody>
-   </table>
+    <div class="table-responsive-lg">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Policy Number</th>
+                    <th scope="col">Claim Number</th>
+                    <th scope="col">Date of Loss</th>
+                    <th scope="col">Administrator Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of userData">
+                    <td>{{ row.id }}</td>
+                    <td>{{ row.Username }}</td>
+                    <td>{{ row.Password }}</td>
+                    <td>{{ row.LastName }}</td>
+                    <td>{{ row.FirstName }}</td>
+                    <td>{{ row.Address }}</td>
+                    <td>{{ row.PolicyNumber }}</td>
+                    <td>{{ row.ClaimNumber }}</td>
+                    <td>{{ row.DateOfLoss }}</td>
+                    <td>{{ row.Admin }}</td>
+                    <td>
+                        <button (click)="onEdit(row)" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addUsersModal">Edit</button>
+                    </td>
+                    <td>
+                        <button (click)="deleteUser(row)" class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
 </div>
 
 <!--Add User Modal-->
@@ -88,14 +93,15 @@
                         </div>
                         <div class="mb-3">
                             <label for="newAdminStatus">Administrator Status</label>
-                            <input type="text" formControlName="AdminStatus" class="form-control" id="newAdminStatus">
+                            <input type="text" formControlName="Admin" class="form-control" id="newAdminStatus">
                         </div>
                     </form>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" (click)="postUserDetails()" class="btn btn-success">Submit</button>
+                    <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" *ngIf="showAddButton" (click)="postUserDetails()" class="btn btn-success">Submit</button>
+                    <button type="button" *ngIf="showUpdateButton"  (click)="updateUserDetails()" class="btn btn-success">Update</button>
                 </div>
             </div>
         </div>
