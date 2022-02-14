@@ -9,5 +9,5 @@ export class UserModel {
     ClaimNumber : string = '';
     DateOfLoss : Date = new Date("01-01-2001");
     Admin : boolean = false;
-  adminstatus: any;
+    adminstatus: any;
 }

@@ -1,56 +1,101 @@
 <div class="container animate__animated animate__fadeIn">
     <div class="row">
         <div class="column d-flex justify-content-center">
-            <div class="table-box">
-              <h1>{{ tableRoomHeader }}</h1>
+            <div class="">
+              <h1>Items</h1>
+              <div>
+                <button class="btn btn-success btn-sm" (click)="revealItemAddButton()" data-bs-toggle="modal" data-bs-target="#ItemModal">Add Item</button>
+              </div>
+              <div style="padding: 1rem; position: absolute; right: 0px;width: 300px;">
+                <button (click)="switchHardcodedUser()" class="btn btn-warning btn-sm">Switch user (development)</button>
+                <p>Current user: <b>{{ hardcodedUser }}</b></p>
+              </div>
+              
                 <table class="table table-striped">
-                    <thead class="table-light">
+                    <thead class="table">
                       <tr>
-                        <th scope="col">Item No.</th>
-                        <th scope="col">Category/Room</th>
-                        <th scope="col">Description of Item</th>
+                        <th scope="col">Item ID</th>
+                        <th scope="col">Room Name</th>
+                        <th scope="col">Description</th>
                         <th scope="col">Brand name, serial number, or model.</th>
-                        <th scope="col">Qty.</th>
-                        <th scope="col">Age in Yrs.</th>
-                        <th scope="col">Replacement Cost $</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Age in Years</th>
+                        <th scope="col">Replacement Cost Per Item $</th>
                         <th scope="col">Total Value $</th>
+                        <th scope="col"></th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody *ngFor="let row of itemData">
                         <tr>
-                          <td scope="row">1</td>
-                          <td>Bedroom</td>
-                          <td>Bed frame</td>
-                          <td>Jefferson, Serial #nfe82r</td>
-                          <td>1</td>
-                          <td>5</td>
-                          <td>1200</td>
-                          <td>1200</td>
+                          <td>{{ row.id }}</td>
+                          <td>{{ row.RoomName }}</td>
+                          <td>{{ row.Description }}</td>
+                          <td>{{ row.Brand }}</td>
+                          <td>{{ row.Quantity }}</td>
+                          <td>{{ row.Age }}</td>
+                          <td>{{ row.CostPerItem }}</td>
+                          <td></td>
+                          <td>
+                            <button class="btn btn-primary btn-sm">Edit</button>
+                          </td>
+                          <td>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                          </td>
                         </tr>
-                        <tr>
-                          <td scope="row">1</td>
-                          <td>Bedroom</td>
-                          <td>Bed frame</td>
-                          <td>Jefferson, Serial #nfe82r</td>
-                          <td>1</td>
-                          <td>5</td>
-                          <td>1200</td>
-                          <td>1200</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">1</td>
-                          <td>Bedroom</td>
-                          <td>Bed frame</td>
-                          <td>Jefferson, Serial #nfe82r</td>
-                          <td>1</td>
-                          <td>5</td>
-                          <td>1200</td>
-                          <td>1200</td>
-                        </tr>
-                      </tbody>
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
+</div>
+
+<!--Item Modal-->
+<div>
+  <div class="modal fade" id="ItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+                      <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+                          <i class="bi bi-x-lg" aria-hidden="true"></i>
+                      </button>
+              </div>
+              <div class="modal-body">
+                  <form [formGroup]="formValue" id="addItemForm">
+                      <div class="mb-3">
+                          <label for="newRoomName">Room Name</label>
+                          <input type="text" formControlName="RoomName" class="form-control" id="newRoomName">
+                      </div>
+                      <div class="mb-3">
+                          <label for="newDescription">Description</label>
+                          <input type="text" formControlName="Description" class="form-control" id="newDescription">
+                      </div>
+                      <div class="mb-3">
+                          <label for="newBrandName">Brand name, serial number, or model</label>
+                          <input type="text" formControlName="Brand" class="form-control" id="newBrandName">
+                      </div>
+                      <div class="mb-3">
+                          <label for="newQuantity">Quantity</label>
+                          <input type="text" formControlName="Quantity" class="form-control" id="newQuantity">
+                      </div>
+                      <div class="mb-3">
+                          <label for="newAge">Age in Years</label>
+                          <input type="text" formControlName="Age" class="form-control" id="newAge">
+                      </div>
+                      <div class="mb-3">
+                          <label for="newCostPerItem">Cost Per Item $</label>
+                          <input type="text" formControlName="CostPerItem" class="form-control" id="newCostPerItem">
+                      </div>
+                  </form>
+
+              </div>
+              <div class="modal-footer">
+                  <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" *ngIf="showAddButton" (click)="postItemDetails()" class="btn btn-success">Submit</button>
+                  <button type="button" *ngIf="showUpdateButton" class="btn btn-success">Update</button>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
