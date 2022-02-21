@@ -64,14 +64,14 @@ export class ApiService {
   }
 
   updateItem(data : any,id : number){
-    return this.http.put<any>("http://localhost:3000/items"+id, data)
+    return this.http.put<any>("http://localhost:3000/items/"+id, data)
     .pipe(map((res:any)=>{
       return res;
     }))
   }
 
   deleteItem(id : number){
-    return this.http.delete<any>("http://localhost:3000/items"+id)
+    return this.http.delete<any>("http://localhost:3000/items/"+id)
     .pipe(map((res:any)=>{
       return res;
     }))

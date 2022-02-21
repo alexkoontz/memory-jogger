@@ -7,4 +7,5 @@ export class ItemModel {
     Quantity : string = '';
     Age : string = '';
     CostPerItem : string = '';
+    TotalValue : number = 0;
 }
