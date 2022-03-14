@@ -38,7 +38,7 @@ h2 {
     width: 20rem;
     padding: 2rem;
     margin: 1rem; 
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
@@ -49,7 +49,7 @@ h2 {
     width: 60rem;
     padding: 2rem;
     margin: 1rem; 
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -webkit-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
     -moz-box-shadow: 10px 10px 29px -18px rgba(0,0,0,0.32);
@@ -57,4 +57,23 @@ h2 {
 
 .admin-container {
     padding-top: 2rem;
+}
+.full-footer{
+    background-color: var(--ui-gray);
+    position: absolute;
+    bottom: 0;
+    width: 67%;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+object.logo {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(20%);
 }

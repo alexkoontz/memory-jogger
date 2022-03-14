@@ -16,6 +16,9 @@ import { AdminComponent } from './components/admin/admin.component';
 import { UserComponent } from './components/user/user.component';
 import { UsersPanelComponent } from './components/users-panel/users-panel.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
+import { HeaderLogoutComponent } from './components/header-logout/header-logout.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AdminComponent,
     UserComponent,
-    UsersPanelComponent
+    UsersPanelComponent,
+    LogoutButtonComponent,
+    HeaderLogoutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
