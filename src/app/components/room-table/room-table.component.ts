@@ -11,6 +11,7 @@ import { ItemModel } from './room-table.model';
 export class RoomTableComponent implements OnInit {
 
   hardcodedUser: string = 'jds123';
+  itemVerb: string = 'null';
   formValue !: FormGroup;
   showAddButton !: boolean;
   showUpdateButton !: boolean;
@@ -75,6 +76,7 @@ export class RoomTableComponent implements OnInit {
   }
 
   onEdit(row : any){
+    this.itemVerb = 'Edit';
     this.showAddButton = false;
     this.showUpdateButton = true;
     
@@ -118,7 +120,7 @@ export class RoomTableComponent implements OnInit {
 
   switchHardcodedUser(){
     if(this.hardcodedUser == "jds123"){
-      this.hardcodedUser = "abe456";
+      this.hardcodedUser = "ack5429";
     } else {
       this.hardcodedUser = "jds123";
     }
@@ -127,6 +129,7 @@ export class RoomTableComponent implements OnInit {
 
   revealItemAddButton(){
     this.formValue.reset();
+    this.itemVerb = 'Add';
     this.showAddButton = true;
     this.showUpdateButton = false;
   }

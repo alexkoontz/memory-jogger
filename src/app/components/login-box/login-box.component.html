@@ -1,16 +1,20 @@
+<div class="container">
+    <app-header></app-header>
+  </div>
+
 <div class="container animate__animated animate__fadeIn">
     <div class="row">
         <div class="column d-flex justify-content-center">
             <div class="box">
                 <h3>{{ loginHeader }}</h3>
-                <form>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
                     <div class="form-group">
                         <label for="username">Username</label>
-                        <input type="username" class="form-control" id="" aria-describedby="emailHelp">
+                        <input formControlName="username" type="username" class="form-control" id="username">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="">
+                        <input formControlName="password" type="password" class="form-control" id="password">
                     </div>
                     <button type="submit" class="btn btn-light" style="margin-top: 1rem;">Login</button>
                 </form>
