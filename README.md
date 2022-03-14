@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
-## Current Screenshots (02/03/2022)
+## Development Screenshots (02/03/2022)
 
 ![Welcome page](https://i.imgur.com/jnHoVkN.jpg)
 
