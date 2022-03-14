@@ -1,0 +1,8 @@
+.background-image {
+    background-image: url('/assets/splash.jpg');
+    background-repeat: no-repeat;
+}
+
+.blur {
+    filter: blur(1.5rem);
+}
