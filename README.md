@@ -1,6 +1,6 @@
-# MemoryJogger - In-development
+# MemoryJogger - September 2021 - March 2022
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+![Video walkthrough of final product](https://youtu.be/ZJ29PBcNG-k)
 
 ## Development Screenshots (02/03/2022)
 
